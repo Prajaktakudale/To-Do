@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:background="#ccc"
+              android:layout_height="fill_parent">
+
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/titleText"
+            android:hint="Task"
+            android:textStyle="bold"
+            android:inputType="textCapWords"/>
+
+    <TextView android:textColor="#fff"
+              android:textSize="20dp"
+              android:layout_height="wrap_content"
+              android:id="@+id/textView1"
+              android:text="Set Due Date"
+              android:layout_width="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp">
+    </TextView>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/linearLayout1">
+
+        <EditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:id="@+id/txtDate">
+        </EditText>
+
+        <Button android:layout_height="wrap_content"
+                android:id="@+id/setDate"
+                android:text="Set Date"
+                android:layout_width="100dp">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/linearLayout1">
+
+        <EditText android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:id="@+id/txtTime">
+        </EditText>
+
+        <Button android:layout_height="wrap_content"
+                android:id="@+id/setTime"
+                android:text="Set Time"
+                android:layout_width="100dp">
+        </Button>
+    </LinearLayout>
+
+    <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"
+            android:onClick="addTask"
+            android:id="@+id/submitButton"
+            />
+</LinearLayout>

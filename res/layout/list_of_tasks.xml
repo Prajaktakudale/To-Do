@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:background="#ccc"
+            android:orientation="horizontal"
+            android:layout_height="35dp">
+        <TextView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text="List Of Task To Do"
+                android:id="@+id/taskList"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:textColor="#000000"
+                android:layout_gravity="center"/>
+        <Button
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:text="HOME"
+                android:layout_marginLeft="70dp"
+                android:onClick="home"
+                android:id="@+id/homeButton"
+                android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:orientation="vertical"
+                  android:background="#ccc"
+                  android:layout_height="fill_parent">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/task"
+                android:layout_marginLeft="5dp"
+                />
+    </LinearLayout>
+</LinearLayout>
